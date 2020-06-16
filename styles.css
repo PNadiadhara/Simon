@@ -1,3 +1,35 @@
 h1 {
   color: aqua;
 }
+
+body {
+  text-align: center;
+  background-color: darkslategray;
+}
+
+
+
+.g {
+  background-image: url("images/green.png");
+}
+
+.r{
+  background-image: url("images/red.png");
+}
+
+.y{
+  background-image: url("images/yellow.png");
+}
+
+.b{
+  background-image: url("images/blue.png");
+}
+
+.segment {
+  width: 300px;
+  height: 300px;
+  background-size: 100%;
+  background-color:transparent;
+  
+  
+}
