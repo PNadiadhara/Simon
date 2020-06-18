@@ -9,19 +9,19 @@ body {
 
 
 
-.g {
+.q {
   background-image: url("images/green.png");
 }
 
-.r{
+.w{
   background-image: url("images/red.png");
 }
 
-.y{
+.a{
   background-image: url("images/yellow.png");
 }
 
-.b{
+.s{
   background-image: url("images/blue.png");
 }
 
@@ -31,5 +31,15 @@ body {
   background-size: 100%;
   background-color:transparent;
   color: transparent;
+  border: 0px;
   
+}
+
+.row {
+  padding: 2px;
+}
+
+.pressed {
+  
+  opacity: 0.5;
 }
