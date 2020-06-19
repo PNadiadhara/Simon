@@ -1,6 +1,7 @@
 var gameRunningStatus = false;
 var sequence = [];
 var userInput = [];
+var score = 0;
 
 function isGameRunning (gameRunningStatus){
     if (gameRunningStatus == false) {
@@ -65,6 +66,7 @@ function playGame(){
     gameRunningStatus = true;
     isGameRunning(gameRunningStatus);
     sequenceGenerator(gameRunningStatus);
+    gameIsRunning(gameRunningStatus);
 }
 
 function sequenceGenerator(){
@@ -118,7 +120,8 @@ function buttonPressedAnimation (currentKey){
 
 function gameIsRunning (gameRunningStatus){
     while (gameRunningStatus){
-        
+        score = sequence.length
+        $("score").text("Score: " + score)
     };
 }
 
