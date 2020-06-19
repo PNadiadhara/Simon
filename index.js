@@ -23,7 +23,7 @@ $(document).keydown(function(event){
     if (event.key == " "){
         playGame();
         console.log("play game works");
-    } else {
+    } else if (event.key == "q" || event.key == "w" || event.key == "a" || event.key == "s"){
         makeSound(event.key);
         buttonPressedAnimation(event.key);
     }
@@ -103,11 +103,17 @@ function randomizer(number){
 
 function buttonPressedAnimation (currentKey){
     var activeButton = document.querySelector("." + currentKey);
-
-    activeButton.classList.add("pressed"); 
-    setTimeout(function(){
-        activeButton.classList.remove("pressed");
-    }, 100);
+    
+    // stops errors for any button pressed without class   
+    if (activeButton.classList.contains("q") || activeButton.classList.contains("w") || activeButton.classList.contains("a") || activeButton.classList.contains("s")) {
+        activeButton.classList.add("pressed"); 
+        setTimeout(function(){
+            activeButton.classList.remove("pressed");
+        }, 100);
+    } else {
+        console.log("not a class button")
+    } 
+    
 }
 
 function gameIsRunning (gameRunningStatus){
