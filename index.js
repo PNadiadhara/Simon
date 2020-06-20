@@ -1,5 +1,5 @@
 var gameRunningStatus = false;
-var sequence = [];
+var sequence = ["q","w","a","s"];
 var userInput = [];
 var score = 0;
 
@@ -55,6 +55,7 @@ function makeSound(key){
         break;
         
         default:
+            playSequence()
         console.log(key);
         console.log("defaulted")
         break;
@@ -119,12 +120,15 @@ function buttonPressedAnimation (currentKey){
 }
 
 function gameIsRunning (gameRunningStatus){
-    while (gameRunningStatus){
-        score = sequence.length
-        $("score").text("Score: " + score)
-    };
+    // while (gameRunningStatus){
+    //     score = sequence.length
+    //     $("score").text("Score: " + score)
+    // };
 }
 
 function playSequence (){
-    
+    for (var i = 0; i <= sequence.length; i++){
+        makeSound(i);
+        buttonPressedAnimation(i);
+    }
 }
