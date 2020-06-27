@@ -9,6 +9,8 @@ function isGameRunning (gameRunningStatus){
     } else {
         $("h1").text("Game ON!")
     }    
+
+
 };
 
 
@@ -120,6 +122,7 @@ function buttonPressedAnimation (currentKey){
 }
 
 function gameIsRunning (gameRunningStatus){
+    score = sequence.length;
     // while (gameRunningStatus){
     //     score = sequence.length
     //     $("score").text("Score: " + score)
