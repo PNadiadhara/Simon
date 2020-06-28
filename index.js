@@ -5,9 +5,9 @@ var score = 0;
 
 function isGameRunning (gameRunningStatus){
     if (gameRunningStatus == false) {
-        $("h1").text("Press Space To Start!")
+        $("top").text("Press Space To Start!")
     } else {
-        $("h1").text("Game ON!")
+        $("top").text("Game ON!")
     }    
 
 
