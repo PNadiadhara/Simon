@@ -109,7 +109,7 @@ function randomizer(number){
 function buttonPressedAnimation (currentKey){
     var activeButton = document.querySelector("." + currentKey);
     
-    // adjust this step
+    
     // stops errors for any button pressed without class   
     if (activeButton.classList.contains("q") || activeButton.classList.contains("w") || activeButton.classList.contains("a") || activeButton.classList.contains("s")) {
         activeButton.classList.add("pressed"); 
