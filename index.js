@@ -3,6 +3,10 @@ var sequence = ["q","w","a","s"];
 var userInput = [];
 var score = 0;
 
+while gameIsRunning {
+    
+}
+
 function isGameRunning (gameRunningStatus){
     if (gameRunningStatus == false) {
         $("top").text("Press Space To Start!")
